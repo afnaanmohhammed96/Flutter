@@ -1,0 +1,18 @@
+void main() {
+  print("welcome");
+ 
+  List<String> names = ["afnaan","saraf","safni"];
+  
+  names.add("hana");
+  names.remove("safni");
+  
+  print(names);
+  
+  String name = greeting();
+  int age = getAge();
+ 
+  print(name);
+  print(age);
+   
+}
+

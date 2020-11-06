@@ -1,0 +1,37 @@
+void main() {
+  User userone = User("afnaan",25);
+  print(userone.name);
+  print(userone.age);
+  
+  User usertwo = User("healer",35);
+  print(usertwo.name);
+  print(usertwo.age);
+  
+  superuser userthree = superuser("imran",70);
+  print(userthree.name);
+  print(userthree.age);
+  userthree.publish();
+}
+
+class User{
+  String name;
+  int age;
+  
+  User(String name,int age){
+    this.name = name;
+    this.age = age;
+  }
+  
+  void login(){
+    print("user logged in");
+  }
+}
+
+class superuser extends User{
+  
+  superuser(String name , int age ): super(name,age);
+  
+  void publish(){
+    print("published");
+  }
+}
